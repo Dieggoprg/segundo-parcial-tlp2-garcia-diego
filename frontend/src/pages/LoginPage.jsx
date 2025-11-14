@@ -69,7 +69,8 @@ export const LoginPage = ({ onLoginSuccess }) => {
             <input
               type="text"
               id="username"
-              name={username}
+              name="username"
+              value={username}
               placeholder="Ingresa tu usuario"
               onChange={handleChange}
               className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -87,7 +88,8 @@ export const LoginPage = ({ onLoginSuccess }) => {
             <input
               type="password"
               id="password"
-              name={password}
+              name="password"
+              value={password}
               placeholder="Ingresa tu contraseña"
               onChange={handleChange}
               className="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"

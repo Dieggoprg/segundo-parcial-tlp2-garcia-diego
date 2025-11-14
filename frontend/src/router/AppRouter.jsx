@@ -5,7 +5,7 @@ import { LoginPage } from "../pages/LoginPage";
 import { RegisterPage } from "../pages/RegisterPage";
 import { HomePage } from "../pages/HomePage";
 
-export const AppRouter = ({authStatus, onLogin}) => {
+export const AppRouter = ({ authStatus, onLogin}) => {
   return (
     <BrowserRouter>
       <Routes>
@@ -17,7 +17,7 @@ export const AppRouter = ({authStatus, onLogin}) => {
 
         {/* Rutas privadas */}
         <Route element={<PrivateRoute authStatus={authStatus}  />}>
-          <Route path="/home" element={<HomePage  />} />
+          <Route path="/home" element={<HomePage />} />
         </Route>
 
         {/* Ruta catch-all - redirige a login */}
